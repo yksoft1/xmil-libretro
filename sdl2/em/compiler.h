@@ -109,3 +109,5 @@ typedef LONG_PTR ssize_t;
 //#define SUPPORT_EXTERNALCHIP
 
 #define	SCREEN_BPP		16
+
+#define EMSCRIPTEN_DIR "/emulator/xmil-em/"

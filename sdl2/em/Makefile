@@ -38,6 +38,10 @@ CFLAGS	=	-Wall -O3 -Wstrict-overflow=0 -Wstrict-aliasing=0 -I. -I.. \
 CFLAGS	+=	$(SDL_CFLAGS)
 LFLAGS	= 	 
 
+ifeq ($(EMULARITY), 1)
+	CFLAGS	+= -DUSE_EMULARITY_NP2DIR
+endif
+
 TARGET	=	xmil.bc
 
 CPPSRCS	=	./main.c \
