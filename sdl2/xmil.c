@@ -161,6 +161,9 @@ int xmil_main(int argc, char *argv[]) {
 
 	while(taskmng_isavail()) {
 		taskmng_rol();
+#ifdef EMSCRIPTEN
+ 		emscripten_sleep_with_yield(0);
+#endif
 		if (xmiloscfg.NOWAIT) {
 			pccore_exec(framecnt == 0);
 			if (xmiloscfg.DRAW_SKIP) {			// nowait frame skip

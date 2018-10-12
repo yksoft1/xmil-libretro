@@ -8,5 +8,10 @@
 *.js
 *.wasm
 *.data
+*.mem
 *.x1
 *.x1t
+xmil.cfg
+*.2d
+*.d88
+*.tap
