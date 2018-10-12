@@ -3,3 +3,10 @@
 *.dylib
 *.so
 *.dll
+*.exe
+*.html
+*.js
+*.wasm
+*.data
+*.x1
+*.x1t
